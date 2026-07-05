@@ -1,6 +1,6 @@
 """embedprobe — a diagnostic toolkit for evaluating language-model embedding spaces."""
 
-__version__ = "0.1.0.dev0"
+__version__ = "0.1.0"
 
 
 def __getattr__(name):

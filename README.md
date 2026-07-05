@@ -4,7 +4,7 @@
 
 Leaderboards like [MTEB](https://github.com/embeddings-benchmark/mteb) tell you _which_ embedding
 model ranks higher on average. **embedprobe tells you _why_ a model fails on your domain and
-language pair, ** so you can pick a compact encoder for your task without fine-tuning every
+language pair,** so you can pick a compact encoder for your task without fine-tuning every
 candidate.
 
 Given a parallel dataset (source text, target text, topic), embedprobe dissects each candidate
