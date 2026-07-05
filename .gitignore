@@ -1,0 +1,12 @@
+context
+CLAUDE.md
+.venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.claude
+.agents
+

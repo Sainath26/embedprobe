@@ -4,22 +4,42 @@ build-backend = "hatchling.build"
 
 [project]
 name = "embedprobe"
-version = "0.0.0"
-description = "A diagnostic toolkit for evaluating and selecting language-model embedding spaces."
+version = "0.1.0.dev0"
+description = "A diagnostic toolkit for evaluating and selecting multilingual embedding models on your data."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Harish Sainath S", email = "sainathharish036@gmail.com" },
+    { name = "Harish Sainath S", email = "harishsainth036@gmail.com" },
 ]
 keywords = ["embeddings", "nlp", "evaluation", "diagnostics", "transformers", "model-selection"]
 classifiers = [
-    "Development Status :: 1 - Planning",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.5",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+    "matplotlib>=3.6",
+    "sentence-transformers>=2.2",
+    "typer>=0.9",
+    "rich>=13",
+    "umap-learn>=0.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build"]
+
+[project.scripts]
+embedprobe = "embedprobe.cli:app"
 
 [project.urls]
 Homepage = "https://github.com/Sainath26/embedprobe"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/embedprobe"]
