@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "embedprobe"
-version = "0.1.0"
+version = "0.1.1"
 description = "A diagnostic toolkit for evaluating and selecting multilingual embedding models on your data."
 readme = "README.md"
 requires-python = ">=3.10"
